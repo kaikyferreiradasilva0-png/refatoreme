@@ -1,10 +1,12 @@
+import "./InfraAws.css";
 
-function InfraAws() {
-    return (
-        <div>
-            <h1>Infrastructure</h1>
-            <p>Infraestrutura AWS.</p>
-        </div>
-    );
+function InfraAws({ title, description }) {
+  return (
+    <div className="card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
 }
+
 export default InfraAws;
