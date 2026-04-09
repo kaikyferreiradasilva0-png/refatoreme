@@ -1,4 +1,5 @@
-function Servico(){
-    return(<p>Servico</p>)
+function Servico() {
+  return <p>Servico</p>;
 }
+
 export default Servico;
