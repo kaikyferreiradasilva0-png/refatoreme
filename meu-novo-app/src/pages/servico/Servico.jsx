@@ -24,7 +24,7 @@ function Servico() {
 
   return (
       <section id="Infraestrutura" className="cards-section">
-        <h2>Infraestrutura Aws</h2>
+        <h2>Nossos serviços de Infraestrutura Aws</h2>
 
         <div className="layout">
           <div id="cards-container" className="cards-grid">
