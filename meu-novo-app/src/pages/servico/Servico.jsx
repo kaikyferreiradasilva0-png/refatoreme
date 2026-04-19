@@ -6,21 +6,39 @@ import "./Servico.css";
 function Servico() {
   const awsData = [
   {
-    id: 1,
-    title: "Cloud Escalável",
-    description: "Infraestrutura AWS com alta disponibilidade e crescimento sob demanda."
+      id: 1,
+      title: "Plano Básico",
+      price: "R$ 49/mês",
+      benefits: [
+      "1 instância EC2",
+      "Deploy simples",
+      "Suporte básico"
+    ]
   },
   {
-    id: 2,
-    title: "Deploy Automatizado",
-    description: "Integração contínua com pipelines CI/CD para deploy rápido e seguro."
+      id: 2,
+      title: "Plano Profissional",
+      price: "R$ 149/mês",
+      benefits: [
+        "Load Balancer",
+        "Banco RDS",
+        "Monitoramento",
+        "Suporte prioritário"
+      ]
   },
   {
-    id: 3,
-    title: "Segurança na Nuvem",
-    description: "Proteção de dados com criptografia e boas práticas da AWS."
+      id: 3,
+      title: "Plano Enterprise",
+      price: "R$ 399/mês",
+      benefits: [
+      "Auto Scaling",
+      "Alta disponibilidade",
+      "Segurança avançada",
+      "Suporte 24/7"
+    ]
   }
 ];
+
 
   return (
       <section id="Infraestrutura" className="cards-section">
@@ -28,16 +46,17 @@ function Servico() {
 
         <div className="layout">
           <div id="cards-container" className="cards-grid">
-            {awsData.map((aws) => (
+            {awsData.map((aws, index) => (
               <InfraAws
                 key={aws.id}
                 title={aws.title}
-                description={aws.description}
+                price={aws.price}
+                benefits={aws.benefits}
+                variant={index}
               />
             ))}
           </div>
         </div>
-        
       </section>
     
   ); 

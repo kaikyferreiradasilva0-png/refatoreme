@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .infra-card {
     background: linear-gradient(135deg, #042457, #22469c);
     padding: 2rem;
@@ -5,35 +10,49 @@
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
+    color: #ffffff;
 
-.infra-card:hover {
-    transform: translateY(-8px) scale(1.02);
+    display: flex;
+    flex-direction: column;
 }
 
 .infra-title {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
-    color: #22469c;
+    margin-bottom: 0.5rem;
+    color: rgb(153, 0, 255);
 }
 
-.infra-description {
-    font-size: 0.95rem;
-    color: #cbd5e1;
-    margin-bottom: 1.5rem;
+.title-0 { color: #94a3b8; }   
+.title-1 { color: #22c55e; }   
+.title-2 { color: #a855f7; }   
+
+.infra-price {
+    color: #38bdf8 !important;
 }
 
+.infra-benefit {
+    color: #e2e8f0;
+    margin: 0.4rem 0;
+    list-style: none;
+}
+.infra-benefit::before {
+    content: "✔ ";
+    color: #22c55e;
+}
+.infra-card ul {
+    flex-grow: 1;
+    margin: 1rem 0;
+    padding: 0;
+}
 .infra-btn {
-    background: #38bdf8;
+    background-color: #0066ff;
+    color: white;
+    padding: 0.55rem 1.5rem;
     border: none;
-    padding: 0.6rem 1.2rem;
     border-radius: 8px;
     cursor: pointer;
-    color: black;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.infra-btn:hover {
-    background: #0ea5e9;
+    transition: background-color 0.3s;
+    
+    margin-top: auto;
+    
 }
